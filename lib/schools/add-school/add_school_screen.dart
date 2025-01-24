@@ -26,12 +26,10 @@ class AddSchool extends StatelessWidget {
     bool processing = addSchoolUiState.processing;
     bool schoolAdded = addSchoolUiState.schoolAdded;
 
-    // Callback function for processing registration
     void processAddSchoolCallback(String name, int number) {
       addSchoolUiState.processAddSchoolForm(name, number);
     }
 
-    // Navigate to SchoolsScreen if registered is true
     if (schoolAdded) {
       Future.microtask(() =>
         Navigator.push(

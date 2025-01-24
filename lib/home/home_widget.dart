@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../auth/forgot-password/forgot_password_screen.dart';
 import '../auth/login/login_screen.dart';
 import '../auth/register/register_screen.dart';
+import '../schools/all-schools/schools_screen.dart';
 
 class HomeWidget extends StatelessWidget {
   
@@ -36,7 +37,10 @@ class HomeWidget extends StatelessWidget {
             ListTile(
               title: Text('Schools'),
               onTap: () {
-                Navigator.pushNamed(context, '/schools/all-schools');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SchoolsScreen()),
+                );
               },
             ),
             if (!loggedIn) ...[

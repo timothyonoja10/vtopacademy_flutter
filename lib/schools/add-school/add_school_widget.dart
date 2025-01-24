@@ -12,7 +12,6 @@ class AddSchoolWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Controllers for the TextFields
     final TextEditingController nameController = TextEditingController();
     final TextEditingController numberController = TextEditingController();
 
@@ -21,7 +20,7 @@ class AddSchoolWidget extends StatelessWidget {
         title: Text('Add School'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0), // Add padding for spacing
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -40,9 +39,9 @@ class AddSchoolWidget extends StatelessWidget {
             SizedBox(height: 16),
             TextField(
               controller: numberController,
-              keyboardType: TextInputType.number, // Accept numbers only
+              keyboardType: TextInputType.number, 
               decoration: InputDecoration(
-                labelText: 'Number', // Updated label
+                labelText: 'Number', 
                 border: OutlineInputBorder(),
               ),
             ),

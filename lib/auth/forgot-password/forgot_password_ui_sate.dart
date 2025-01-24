@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:vtopacademy_flutter/auth/forgot-password/forgot_password_api.dart';
+
+import 'forgot_password_api.dart';
 
 class ForgotPasswordUiState extends ChangeNotifier {
   bool processing = false;

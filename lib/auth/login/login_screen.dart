@@ -26,12 +26,10 @@ class Login extends StatelessWidget {
     bool processing = loginUiState.processing;
     bool loggedIn = loginUiState.loggedIn;
 
-    // Callback function for processing registration
     void processLoginCallback(String username, String password) {
       loginUiState.processLoginForm(username, password);
     }
 
-    // Navigate to SchoolsScreen if registered is true
     if (loggedIn) {
       Future.microtask(() =>
         Navigator.push(

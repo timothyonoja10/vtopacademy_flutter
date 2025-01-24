@@ -26,12 +26,10 @@ class ForgotPassword extends StatelessWidget {
     bool codeGenerated = forgotPasswordUiState.codeGenerated;
     String username = forgotPasswordUiState.username;
 
-    // Callback function for processing registration
     void processForgotPasswordCallback(String username) {
       forgotPasswordUiState.processForgotPasswordForm(username);
     }
 
-    // Navigate to SchoolsScreen if registered is true
     if (codeGenerated) {
       Future.microtask(() =>
         Navigator.push(

@@ -14,7 +14,6 @@ Future<List<School>> getAllSchoolsFromApi() async {
     final List<dynamic> schoolsJson = jsonDecode(response.body) as List<dynamic>;
     return schoolsJson.map((json) => School.fromJson(json as Map<String, dynamic>)).toList();
   } else {
-    // throw Exception('Failed to load schools');
     return [];
   }
 }
