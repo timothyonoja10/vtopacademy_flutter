@@ -31,6 +31,16 @@ class SchoolsWidget extends StatelessWidget {
                 style: Theme.of(context).textTheme.displaySmall,
               ),
             ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: schools.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    title: Text(schools[index].name),
+                  );
+                },
+              ),
+            ),
           ],
         ),
     );
