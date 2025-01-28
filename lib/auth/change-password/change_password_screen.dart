@@ -33,7 +33,7 @@ class ChangePassword extends StatelessWidget {
       changePasswordUiState.processChangePasswordForm(username, newPassword, code);
     }
 
-    // Navigate to SchoolsScreen if registered is true
+    // Navigate to SchoolsScreen if change password is true
     if (passwordChanged) {
       Future.microtask(() =>
         Navigator.push(

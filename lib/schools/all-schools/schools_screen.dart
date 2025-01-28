@@ -23,9 +23,11 @@ class Schools extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var schoolsUiState = context.watch<SchoolsUiState>();
-    bool loading = schoolsUiState.loading;     
+    bool loading = schoolsUiState.loading;
+    bool isAdmin = schoolsUiState.isAdmin;
+
     List<School> schools =  schoolsUiState.schools;  
 
-    return SchoolsWidget(loading: loading, schools: schools);
+    return SchoolsWidget(loading: loading, schools: schools, isAdmin: isAdmin);
   }
 }

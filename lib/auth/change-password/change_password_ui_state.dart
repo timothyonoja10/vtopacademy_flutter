@@ -1,5 +1,4 @@
 
-
 import 'package:flutter/material.dart';
 import '../auth_response.dart';
 import '../authentication_store.dart';
